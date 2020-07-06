@@ -1,0 +1,77 @@
+		th { padding: 7px; margin: 5px; color: grey; font-weight: bold;}
+		td {padding: 7px; margin: 5px; color: teal;}
+		.title {font-size: 3.5vw; font-weight: bold; color: teal; font-style:italic;}
+		
+		#lsAll{background-color: bisque;}
+		#localData{font-style: oblique;}
+		
+		.Ltitle{font-size: 1.25em; font-weight: bold; color: red;}
+	
+		#info{
+			float: right;
+		}
+		#pic{
+			float: left;
+		}
+		input{
+			font-size: 0.85em;
+		}
+		
+		#toQuery{
+			text-align: center;
+			width: 100%;
+		}
+
+		.ui-icon-sheridan:after {
+			background-image: url("images/sheridan.png");
+			background-size: 25px 25px;
+		}
+
+		.ui-icon-quemark:after {
+			background-image: url("images/quemark.png");
+			background-size: 25px 25px;
+		}
+		.ui-icon-home:after {
+			background-image: url("../_images/home.jpg");
+			background-size: 25px 25px;
+		}
+		
+		.ui-icon-save:after {
+			background-image: url("images/save.jpg");
+			background-size: 25px 25px;
+		}
+		
+		.ui-icon-quemark:after {
+			background-image: url("images/quemark.jpg");
+			background-size: 25px 25px;
+		}
+		
+		.ui-icon-aboutMe:after {
+			background-image: url("images/aboutMe.jpg");
+			background-size: 25px 25px;
+		}
+		
+		.ui-icon-w3:after {
+			background-image: url("images/w3.jpg");
+			background-size: 25px 25px;
+		}
+		.ui-icon-mi:after {
+			background-image: url("images/mi.jpg");
+			background-size: 25px 25px;
+		}
+		.ui-icon-me:after {
+			background-image: url("images/me.jpg");
+			background-size: 25px 25px;
+		}
+		.ui-icon-vf:after {
+			background-image: url("images/vf.jpg");
+			background-size: 25px 25px;
+		}
+		.ui-icon-hc:after {
+			background-image: url("images/hc.jpg");
+			background-size: 25px 25px;
+		}
+		.ui-icon-gr:after {
+			background-image: url("images/gr.jpg");
+			background-size: 25px 25px;
+		}

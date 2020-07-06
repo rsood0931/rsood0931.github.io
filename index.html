@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Rahul Sood
+	(991458740) -->
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="_css/jquery.mobile.css">
+	<link rel="stylesheet" href="_css/mystyles.css">
+	
+	<script src="_js/jquery.js"></script>
+	<script src="_js/jquery.mobile.js"></script>
+	<script src="_js/myscript.js"></script>
+	
+</head>
+
+<body>
+	<!-- Main Page-->
+	<div id="mainPage" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1><span id="titleMain" class="title"></span></h1>
+		</header>
+		
+		<section class="ui-content" role="main">
+			<section class="ui-grid-a">  <!-- Grid Starts-->
+			
+				<section  style="width:30%;" class="ui-block-a">
+					<a href="#lsAll" class="ui-btn ui-icon-save ui-btn-icon-right" style="font-size: 0.90em;">Data</a>
+				</section>
+				<br><br><br>
+				
+				
+				<section style="width:70%;" class="ui-block-b" id="dataTemp">
+					<ul data-role="listview" id="fGroup" data-inset="true">
+					</ul>
+				</section>
+				
+			</section> <!-- Grid Ends-->
+			
+			
+		</section>
+<!-- Panel Starts here-->
+		<div data-role="panel" id="lsAll">
+			<div data-role="content">
+				<div id="localData">
+					<h3>Local Storage Data</h3>
+
+					<section id="Ltype"></section>
+					<section id="Lemail"></section>
+					<section id="Ltxt"></section>
+					<section id="Lsenior"></section>
+					<section id="Lcitizen"></section>
+					<a class="ui-btn" id="close">CLOSE</a>
+				</div>
+				
+		</div>
+</div>
+<!-- Panel ENDS here-->
+
+		<footer data-role="footer">
+			
+			<section class="ui-grid-b">
+				<section class="ui-block-a" id="abtMe">
+			<a href="#aboutMe" 
+					class="ui-btn ui-icon-aboutMe ui-btn-icon-left"><span class="Ltitle">About Me</span></a>
+				</section>
+				
+				<section class="ui-block-b">
+			<a href="http://www.sheridancollege.ca" 
+					target="_blank"
+					class="ui-btn ui-icon-sheridan ui-btn-icon-left"><span class="Ltitle">Sheridan</span></a>
+				</section>
+				
+				<section class="ui-block-c">
+			<a href="https://www.w3schools.com/js/js_json_intro.asp" 
+					target="_blank"
+					class="ui-btn ui-icon-w3 ui-btn-icon-left"><span class="Ltitle">W3School</span></a>
+				</section>
+			<p id="toQuery">
+			<a  style="width: 100%;" href="#queryPage" 
+					class="ui-btn ui-icon-quemark ui-btn-icon-left"><span class="Ltitle">Any query?</span></a>
+			</p>
+			</section>
+		</footer>
+	</div> <!--End of Main Page-->
+	
+	<!--Popup Page for about me section -->
+	<div data-role="page" id="aboutMe"> 
+		<div data-role="content" >
+			<a href="#mainPage" class="ui-btn ui-icon-home ui-btn-icon-right">HOME</a><br><br>
+			<section id="pic"></section>
+			<p id="info"></p> 
+		</div> 
+	</div><!--End of popup -->
+
+	<div id="secondPage" data-role="page" data-theme="a"> <!--Start of Second Page -->
+		<header data-role="header">
+			<a href="#mainPage">Back</a>
+				<h1><span class="title" id="titleSecondPage"></span></h1>
+		</header>
+		
+	<section class="ui-content" role="main">
+		<p id="directions"></p>
+		<table id="servData"> </table>
+
+	</section>
+
+
+	</div> <!--End of Second Page -->
+
+	<div id="queryPage" data-role="page"> <!--Start of Query Page -->
+	<header data-role="header">
+			<a href="#mainPage">Back</a>
+				<h1><span class="title">Assignment 3</span></h1>
+		</header>
+
+	<div data-role="content" >
+			<form method="post"
+				  onsubmit="result()">		<!-- update form attributes -->
+				<fieldset>
+					<label for="email">Email</label>
+					<input type="email" id="mailID" autofocus>
+					<br>
+					<label for="queType">Question Type</label>
+					<fieldset id="queryType" data-role="controlgroup"></fieldset>
+
+					<br>
+
+					<label for="qText">Type a question</label>
+					<textarea id="qTextID" rows="1" col="25"> </textarea>
+
+
+					<label for="citizen">Canadian Citizen?
+						<select name="cFlip" id="cFlip" data-role="flipswitch">
+							
+							<option value="No">No</option>
+							<option value="Yes" selected>YES</option>
+						</select> 
+					</label>
+					
+
+					<label for="senior">Senior Citizen?
+						<select name="sFlip" id="sFlip" data-role="flipswitch">
+							<option value="No" selected>No</option>
+							<option value="Yes">YES</option>
+						</select> 
+					</label>
+				</fieldset>					
+				<input type="submit" value="Submit Changes" />
+			</form>
+</div>
+	</div> <!--End of Query Page -->
+	
+</body>
+</html>
